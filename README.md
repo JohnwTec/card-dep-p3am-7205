@@ -1,2 +1,44 @@
 # card-dep-p3am-7205
 App de Cartão de decolagem da ANV Órion P-3AM 7205
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card DEP P3AM 7205</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Card DEP P3AM 7205</h1>
+        <p>Basic Weight Aircraft 7205 = 64974lb</p>
+
+        <label for="flightTime">Tempo de voo desejado (h:min):</label>
+        <input type="text" id="flightTime" placeholder="ex: 2:30"><br>
+
+        <label for="reserveFuel">Combustível reserva (lb):</label>
+        <select id="reserveFuel">
+            <option value="8000">8000lb</option>
+            <option value="10000">10000lb</option>
+            <option value="12000">12000lb</option>
+        </select><br>
+
+        <label for="crewMembers">Quantidade de tripulantes:</label>
+        <input type="number" id="crewMembers" min="1" max="20"><br>
+
+        <label for="crewWeight">Peso do Trip/Pass:</label>
+        <select id="crewWeight">
+            <option value="200">200lb (com colete)</option>
+            <option value="180">180lb (sem colete)</option>
+        </select><br>
+
+        <label for="payload">Carga útil (lb):</label>
+        <input type="number" id="payload"><br>
+
+        <button id="calculateBtn">Calcular</button>
+
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
