@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const basicWeight = 64974;
+    const basicWeight = 64973;
     const maxZFW = 71584;
     const landingWeight = 91320;
     const fuelConsumptionRates = [6000, 5000, 4000];
